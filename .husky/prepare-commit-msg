@@ -1,0 +1,1 @@
+npx aicommits --message "$1"

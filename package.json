@@ -1,0 +1,23 @@
+{
+  "name": "04_landing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass assets/scss dist/css",
+    "watch-css": "sass --watch assets/scss:dist/css",
+    "prepare-husky": "husky intall",
+    "ai-commit": "aicommits --type conventional && git commit",
+    "aicommits": "aicommits"
+  },
+  "keywords": [],
+  "author": "Fernando Alonso",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "aicommits": "^1.11.0",
+    "husky": "^9.1.6",
+    "sass": "^1.79.4"
+  }
+}

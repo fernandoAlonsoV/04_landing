@@ -1,0 +1,19 @@
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar node_modules
+node_modules/
+
+# Ignorar archivos compilados de Sass
+*.css.map
+
+# Ignorar archivos de compilación
+dist/
+build/
+
+# Ignorar archivos de configuración local
+.env
