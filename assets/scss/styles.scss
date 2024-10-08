@@ -1,4 +1,7 @@
-@import url('./config/variables.scss');
-@import url('./components/header.scss');
-@import url('./components/layout.scss');
-
+@import "./base/fonts";
+@import "./config/variables";
+@import "./config/mixins";
+@import "./base/normalize";
+@import "./components/header";
+@import "./components/menu";
+@import "./components/layout";

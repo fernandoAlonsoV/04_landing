@@ -1,1 +1,35 @@
+/*
+* fonts
+*/
+
+// fonts-family
+$title-font: "Avenir Heavy", sans-serif;
+$body-font: "Avenir Light", sans-serif;
+
+// fonts-color
+$text-color: #282828;
+
+/*
+* components colors
+*/
+
+// header
+$header-color: #ffff;
+$border-color: #e6e6e6;
+
+// burguer-menu
+$menu-color: #4f4898;
+
+/*
+* components sizes
+*/
 $max-width: 1200px;
+$header-height: 4rem;
+
+/*
+* Breakpoints
+*/
+
+$breakpoints: (
+  l: 1024px,
+);

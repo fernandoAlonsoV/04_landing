@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+.body-font {
+  margin: 0;
+  font-family: $body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title-font {
+  font-family: $title-font;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
