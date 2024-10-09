@@ -1,7 +1,9 @@
 @import "./base/fonts";
-@import "./config/variables";
 @import "./config/mixins";
+@import "./config/variables";
+@import "./theme/theme";
 @import "./base/normalize";
 @import "./components/header";
 @import "./components/menu";
 @import "./components/layout";
+@import "./components/banner";

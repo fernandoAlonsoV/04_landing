@@ -1,3 +1,43 @@
+:root {
+  /* Colores principales (Brand) */
+  --color-primary: #4f4898; /* Púrpura profundo: Color principal de marca para encabezados, botones principales */
+  --color-secondary: #36a9e1; /* Azul brillante: Color secundario para complementar y acentos */
+
+  /* Colores de fondo */
+  --bg-color-light: #f9f9fb; /* Fondo claro, neutro y limpio para dar aire */
+  --bg-color-dark: #2b254a; /* Fondo oscuro derivado del púrpura, para secciones destacadas o contrastantes */
+  --bg-color-light2: #ffffff; /* Fondo claro */
+  --bg-color-dark2: #2c2a45; /* Fondo oscuro, basado en el tono púrpura oscuro (#4F4898) mezclado con negro */
+
+  /* Colores de texto */
+  --text-color-main: #2b254a; /* Color de texto oscuro derivado del púrpura profundo */
+  --text-color-light: #ffffff; /* Texto sobre fondos oscuros */
+  --text-color-muted: #757575; /* Texto menos destacado, color neutro grisáceo */
+
+  --text-color-main2: #2c2a45; /* Texto oscuro derivado del color primario para buen contraste */
+  --text-color-muted2: #7d7b8b; /* Texto menos destacado, tono neutro entre púrpura y gris */
+
+  /* Colores de bordes */
+  --border-color-light: #e0e0e0; /* Borde claro, sutil y minimalista */
+  --border-color-dark: #4f4898; /* Borde oscuro que mantiene coherencia con el púrpura principal */
+  --border-color-light2: #d6d4e0; /* Bordes claros, un tono más suave del púrpura */
+  --border-color-dark2: #3a3661; /* Bordes oscuros basados en una versión saturada del color primario */
+
+  /* Colores interactivos */
+  --hover-color: #fec82f; /* Amarillo cálido para hover en botones, genera contraste y resalta acciones */
+  --active-color: #e8412a; /* Rojo vibrante para botones activos o estados importantes */
+
+  /* Sombras o detalles */
+  --shadow-color: rgba(
+    0,
+    0,
+    0,
+    0.15
+  ); /* Sombra suave para dar profundidad a los elementos */
+  --shadow-color2: rgba(0, 0, 0, 0.8); /* Sombras suaves */
+  --highlight-color: #bf599d; /* Rosa púrpura como color de realce o para detalles visuales sutiles */
+}
+
 /*
 * fonts
 */
@@ -5,31 +45,34 @@
 // fonts-family
 $title-font: "Avenir Heavy", sans-serif;
 $body-font: "Avenir Light", sans-serif;
-
-// fonts-color
-$text-color: #282828;
-
 /*
-* components colors
-*/
-
-// header
-$header-color: #ffff;
-$border-color: #e6e6e6;
-
-// burguer-menu
-$menu-color: #4f4898;
-
-/*
-* components sizes
-*/
-$max-width: 1200px;
-$header-height: 4rem;
-
-/*
-* Breakpoints
+* variables de Breakpoints
 */
 
 $breakpoints: (
   l: 1024px,
 );
+// font - size
+:root {
+  --h1-font-size: 2rem;
+  --body-font-size: 0.9rem;
+  --small-font-size: 0.75rem;
+  @include from(l) {
+    --h1-font-size: 2.5rem;
+    --body-font-size: 1rem;
+    --small-font-size: 0.8rem;
+  }
+}
+
+//variables de apilamiento z-index
+
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+$max-width: 1200px;
+$header-height: 4rem;

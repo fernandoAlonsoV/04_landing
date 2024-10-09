@@ -13,23 +13,24 @@
 }
 
 .main-menu__link {
-  color: $border-color;
+  color: var(--text-color-light);
   margin-left: 1rem;
 
   @include from(l) {
-    color: $text-color;
+    color: var(--text-color-main);
   }
 }
 
 .main-nav {
   height: calc(100vh - #{$header-height});
-  width: 80vw;
+  width: 70vw;
   padding-top: 1rem;
   position: fixed;
   top: $header-height;
-  right: -80vw;
-  background-color: $menu-color;
+  right: -70vw;
+  background-color: var(--highlight-color);
   transition: right 0.3s;
+  z-index: var(--z-fixed);
 
   @include from(l) {
     position: static;
@@ -45,7 +46,7 @@
 }
 
 .main-menu-toggle {
-  $color: $menu-color;
+  $color: var(--highlight-color);
   width: 2.4rem;
   height: 1.8rem;
   background: linear-gradient(
