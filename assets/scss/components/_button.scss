@@ -1,0 +1,12 @@
+.button {
+  color: var(--border-color-dark);
+  display: inline-block;
+  border: 1px solid;
+  padding: 0.5em 1em;
+  border-radius: 0.25rem;
+
+  &:hover {
+    background-color: var(--border-color-dark);
+    color: #fff;
+  }
+}

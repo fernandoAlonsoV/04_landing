@@ -4,6 +4,8 @@
   padding-right: 2rem;
   margin: 0 auto;
   height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 //anchos personalizados
 
@@ -28,4 +30,27 @@
 
 .center-content {
   text-align: center;
+}
+
+.l-section {
+  margin-bottom: 2rem;
+  @include from(l) {
+    margin-bottom: 4rem;
+  }
+  &--diagonal {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-secondary);
+      z-index: var(--z-back);
+      transform: skewY(-1deg) scaleY(1.01);
+
+      @include from(l) {
+        transform: skewY(-1.5deg) scaleY(1.08);
+      }
+    }
+  }
 }

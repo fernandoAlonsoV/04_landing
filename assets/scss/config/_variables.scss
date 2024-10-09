@@ -34,7 +34,7 @@
     0,
     0.15
   ); /* Sombra suave para dar profundidad a los elementos */
-  --shadow-color2: rgba(0, 0, 0, 0.8); /* Sombras suaves */
+  --shadow-color2: rgba(0, 0, 0, 0.5); /* Sombras suaves */
   --highlight-color: #bf599d; /* Rosa púrpura como color de realce o para detalles visuales sutiles */
 }
 
@@ -43,7 +43,9 @@
 */
 
 // fonts-family
-$title-font: "Avenir Heavy", sans-serif;
+$h1-font-family: "Avenir Heavy", sans-serif;
+$h-font-family: "Avenir Medium", sans-serif;
+
 $body-font: "Avenir Light", sans-serif;
 /*
 * variables de Breakpoints
@@ -52,13 +54,18 @@ $body-font: "Avenir Light", sans-serif;
 $breakpoints: (
   l: 1024px,
 );
+
 // font - size
 :root {
   --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
   --body-font-size: 0.9rem;
   --small-font-size: 0.75rem;
   @include from(l) {
     --h1-font-size: 2.5rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.5rem;
     --body-font-size: 1rem;
     --small-font-size: 0.8rem;
   }

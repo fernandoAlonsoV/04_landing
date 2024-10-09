@@ -1,0 +1,12 @@
+[class*="icon-"]::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+.icon-ice-cream::before {
+  background-image: url(../img/icon-ice-cream.png);
+  background-size: contain; /* Asegura que la imagen se ajuste dentro del contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}

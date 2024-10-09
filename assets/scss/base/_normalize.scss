@@ -18,10 +18,19 @@ h4,
 h5,
 h6,
 .title-font {
-  font-family: $title-font;
+  font-family: $h-font-family;
+  margin-top: 0;
 }
+
 h1 {
+  font-family: $h1-font-family;
   font-size: var(--h1-font-size);
+}
+h2 {
+  font-size: var(--h2-font-size);
+}
+h3 {
+  font-size: var(--h3-font-size);
 }
 
 a {

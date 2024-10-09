@@ -1,0 +1,33 @@
+.card {
+  margin-bottom: 2rem;
+  border: 1px solid var(--border-color-light);
+  &__image img {
+    display: block;
+  }
+  &__content {
+    padding: 1rem;
+    background-color: #fff;
+  }
+  &__subtitle {
+    // este es un hack para subir el subtitulo y este cerca del h3
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.6;
+  }
+  &__footer {
+    border-top: 1px solid var(--border-color-light);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.cards-grid {
+  @include from(l) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+}
