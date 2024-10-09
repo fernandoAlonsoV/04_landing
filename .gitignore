@@ -12,7 +12,7 @@ node_modules/
 *.css.map
 
 # Ignorar archivos de compilación
-dist/
+dist/css
 build/
 
 # Ignorar archivos de configuración local
